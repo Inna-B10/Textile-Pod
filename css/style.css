@@ -8,14 +8,13 @@ header {
   padding: 10px 10px 10px 30px;
   justify-content: center;
   align-items: center;
-  gap: 285px;
   background: #fff;
   position: relative;
 }
 header .navbar {
   display: flex;
   padding: 0px 4px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 35px;
 }
@@ -37,7 +36,6 @@ header #logo {
 }
 footer {
   display: flex;
-  padding: 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;

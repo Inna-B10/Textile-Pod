@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+header {
+  display: flex;
+  padding: 10px 10px 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 285px;
+  background: rgba(255, 255, 255, 0.78);
+  position: relative;
+}
+header .navbar {
+  display: flex;
+  padding: 0px 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  background: rgba(255, 255, 255, 0.78);
+}
+header .navbuttons {
+  height: 53px;
+  padding: 15px 12px;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.78);
+}
+header #logo {
+  width: 134px;
+  height: 130px;
+  background: rgba(255, 255, 255, 0.78);
+}

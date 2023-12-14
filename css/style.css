@@ -1,13 +1,15 @@
 * {
   margin: 0;
 }
+body {
+}
 header {
   display: flex;
   padding: 10px 10px 10px 30px;
   justify-content: center;
   align-items: center;
   gap: 285px;
-  background: rgba(255, 255, 255, 0.78);
+  background: #fff;
   position: relative;
 }
 header .navbar {
@@ -16,7 +18,7 @@ header .navbar {
   justify-content: center;
   align-items: center;
   gap: 35px;
-  background: rgba(255, 255, 255, 0.78);
+  
 }
 header .navbuttons {
   height: 53px;
@@ -29,10 +31,7 @@ header .navbuttons {
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.78);
 }
 header #logo {
   width: 134px;
   height: 130px;
-  background: rgba(255, 255, 255, 0.78);
-}

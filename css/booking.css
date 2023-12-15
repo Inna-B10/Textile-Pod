@@ -69,3 +69,6 @@ main #steps #step3 {
 main #steps #step4 {
   background: #c2dfeb;
 }
+.booking-header-img {
+  background-image: url(/images/booking.webp);
+}

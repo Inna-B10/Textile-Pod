@@ -26,7 +26,7 @@ header .navbuttons {
   font-family: Montserrat;
   font-size: 25px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   text-decoration: none;
 }
@@ -76,9 +76,9 @@ footer .text-wrap a {
   color: #000;
   text-align: center;
   font-family: Anonymous Pro;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal;
   text-decoration: none;
 }

@@ -8,14 +8,17 @@ header {
   padding: 10px 10px 10px 30px;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   gap: 285px;
+=======
+>>>>>>> cf77a4263b8e17b5d3532da6878194d31baeaee8
   background: #fff;
   position: relative;
 }
 header .navbar {
   display: flex;
   padding: 0px 4px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 35px;
 }
@@ -27,7 +30,7 @@ header .navbuttons {
   font-family: Montserrat;
   font-size: 25px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   text-decoration: none;
 }
@@ -37,7 +40,10 @@ header #logo {
 }
 footer {
   display: flex;
+<<<<<<< HEAD
   padding: 0px;
+=======
+>>>>>>> cf77a4263b8e17b5d3532da6878194d31baeaee8
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -78,9 +84,15 @@ footer .text-wrap a {
   color: #000;
   text-align: center;
   font-family: Anonymous Pro;
+<<<<<<< HEAD
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+=======
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+>>>>>>> cf77a4263b8e17b5d3532da6878194d31baeaee8
   line-height: normal;
   text-decoration: none;
 }

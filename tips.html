@@ -3,35 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="alternatives.css" />
+    <link rel="stylesheet" href="tips.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="tabs.js"></script>
-    <script>
-      $(window).scroll(function () {
-        if ($(window).scrollTop() > 150) {
-          $("nav").addClass("sticky");
-        } else {
-          $("nav").removeClass("sticky");
-        }
-      });
-    </script>
-    <title>Document</title>
+
+    <title>Tips</title>
   </head>
   <body>
-    <header>
-      <h1>slogan</h1>
+    <header class="flex column tips-header-img">
+      <h1>Transforming Wardrobes</h1>
+      <h1>Transforming Communities</h1>
+      <nav id="navbar">
+        <div class="nav-bar flex">
+          <a href="index.html">Home</a>
+          <a href="booking.html">How it works</a>
+          <img class="img-logo" src="images/logo.png" alt="Logo Textile Pod" />
+          <a href="tips.html">Tips</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+      </nav>
     </header>
-    <nav class="flex">
-      <div class="flex nav-bar">
-        <a href="index.html">Home</a>
-        <a href="booking.html">How it works</a>
-        <img class="img-logo" src="images/logo.png" alt="Logo Textile Pod" />
-        <a href="alternatives.html">Alternatives</a>
-        <a href="contact.html">Contact us</a>
-      </div>
-    </nav>
+
     <main>
-      <caption>
+      <section class="steps">
+        <h2>Do you want breathe new life into your old clothes?</h2>
+        <div>
+          <p>
+            If you want make some space in your wardrobe and make room for new stuff, try decluttering it. But what do you do with all those old clothes, you ask? Well, here are several ideas - donate, recycle, sell, make a swap party, use for hobby projects. Before making a choice, it's essential to sift through your wardrobe. There are several ways to go about it, but let's start with the basic steps to get you going.
+          </p>
+          <div class="flex decluttering">
+            <div>
+              <h3>Streamline Your Closet</h3>
+              <p>
+                Initiate the decluttering process by systematically sorting through your wardrobe. This involves separating out clothing, footwear, accessories, handbags, and purses that no longer serve your needs, fit properly, or align with your preferences.
+                <br /> <br />
+                When uncertain about whether to part with an item, consider the following inquiries:
+                <ul>
+                  <li>Have I worn this within the past year?</li>
+                  <li>Does it fit me well?</li>
+                  <li>Does it evoke a positive feeling when worn?</li>
+                  <li>Is it in good condition?</li>
+                </ul>
+                If any of these questions result in a negative response, it's an indication that it is time for items to live your wardrobe.
+              </p>
+                <h3>Key Tips for Wardrobe Decluttering:</h3>
+                <ul>
+                  <li>Allocate a dedicated time and space for the decluttering process to maintain focus.</li>
+                  <li>Empty your wardrobe entirely to visually assess your possessions and identify items to remove.</li>
+                  <li>Methodically evaluate each item based on the questions provided. If any item falls short, earmark it for second life.</li>
+                  <li>For items causing hesitation, create a 'maybe' pile and revisit it later to make a final decision.</li>
+                  <li>Once decluttered, organize the retained items back into your wardrobe. Decide what will you do with the discarded clothes, shoes, bags, purses, and accessories.</li>
+                </ul>
+            </div>
+            <img src="images/decluttering2.jpg" alt="Wardrobe Decluttering">
+          </div>     
+        </div>
+      </section>
+      <section>
+        <!-- TAB START -->
         <div class="tabs">
           <ul class="tab-links">
             <li class="active">
@@ -42,53 +72,94 @@
             <li><a class="tab4-bg-color" href="#repair">Repair</a></li>
             <li><a class="tab5-bg-color" href="#craft">Craft Projects</a></li>
           </ul>
-
+          <!-- Tab content -->
           <div class="tab-content">
             <div id="donation" class="tab active tab1-bg-color">
-              <p>
-                One of the most noble actions is to donate unwanted clothing to
-                local charities or thrift stores. You can directly give away
-                clothes to people. This helps those in need and reduces the
-                amount of textile waste.
-              </p>
+              <div class="inline-flex text-side">
+                <div>
+                  <p>
+                    One of the most noble actions is to donate unwanted clothing
+                    to local charities or thrift stores. You can directly give
+                    away clothes to people. This helps those in need and reduces
+                    the amount of textile waste.
+                  </p>
+                </div>
+                <img
+                  class="img-tab-content"
+                  src="images/donate.jpg"
+                  alt="Donation clothes"
+                />
+              </div>
             </div>
 
             <div id="recycling" class="tab tab2-bg-color">
-              <p>
-                Many cities offer textile recycling programs. You can drop off
-                old clothes at designated containers or recycling centers.
-              </p>
-              <p>
-                Some shops have recycling programme where you can receive a
-                thank you voucher to use towards your next purchase.
-              </p>
+              <div class="inline-flex text-side">
+                <img
+                  class="img-tab-content"
+                  src="images/recycle.jpg"
+                  alt="Clothes to recycling"
+                />
+                <div>
+                  <p>
+                    Many cities offer textile recycling programs. You can drop
+                    off old clothes at designated containers or recycling
+                    centers.
+                  </p>
+                  <p>
+                    Some shops have recycling programme where you can receive a
+                    thank you voucher to use towards your next purchase.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div id="swap" class="tab tab3-bg-color">
-              <p>
-                Organize clothing swaps with friends or participate in community
-                exchange events. Additionally, consider selling clothes on the
-                second-hand market or online platforms.
-              </p>
+              <div class="inline-flex text-side">
+                <div>
+                  <p>
+                    Organize clothing swaps with friends or participate in
+                    community exchange events. Additionally, consider selling
+                    clothes on the second-hand market or online platforms.
+                  </p>
+                </div>
+                <img
+                  class="img-tab-content"
+                  src="images/swap.jpg"
+                  alt="Girls swap clothes"
+                />
+              </div>
             </div>
 
             <div id="repair" class="tab tab4-bg-color">
-              <p>
-                If you have old items with wear and tear, try repairing or
-                altering them. Sometimes small changes can breathe new life into
-                clothing. You can choose to do it yourself or use services that
-                will help you for free or for a little bit of money. There is
-                also an option when you fix your own clothes with the help of
-                experienced people.
-              </p>
+              <div class="inline-flex text-side">
+                <img
+                  class="img-tab-content"
+                  src="images/repair.jpg"
+                  alt="Repairing of clothes"
+                />
+                <div>
+                  <p>
+                    If you have old items with wear and tear, try repairing or
+                    altering them. Sometimes small changes can breathe new life
+                    into clothing. You can choose to do it yourself or use
+                    services that will help you for free or for a little bit of
+                    money. There is also an option when you fix your own clothes
+                    with the help of experienced people.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div id="craft" class="tab tab5-bg-color">
-              <p></p>
+              <div class="inline-flex text-side">
+                <p></p>
+                <img class="img-tab-content" src="" alt="" />
+              </div>
             </div>
           </div>
         </div>
-      </caption>
+        <!-- TABS END -->
+      </section>
     </main>
     <div style="width: 500px">
       <div>
@@ -167,5 +238,21 @@
         laborum neque omnis error eum ullam maxime nobis cum?
       </div>
     </div>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>

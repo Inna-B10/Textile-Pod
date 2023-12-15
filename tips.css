@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: calc(1em + 0.5vw);
+    background: rgb(125, 202, 255);
+    background: linear-gradient(0deg, rgba(125, 202, 255, 1) 0%, rgba(255, 248, 190, 1) 66%);
+}
+
+
+/*------ START header ----------------*/
+header {
+    width: 100%;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 30px;
+    justify-content: end;
+    align-items: end;
+}
+
+#navbar {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    color: #c7c7c7;
+    text-transform: uppercase;
+    opacity: 0.6;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+}
+
+.nav-bar {
+    /* ?margin top -100px */
+    margin: 0px auto 0px auto;
+    padding: 5px 0px;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+#navbar a {
+    /* float: left; */
+    /* display: block; */
+    /* color: #f2f2f2; */
+    /* text-align: center; */
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* #navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+} */
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 1 !important;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.img-logo {
+    width: 80px;
+}
+
+/*------END header ---------------------*/
+.tips-header-img {
+    background-image: url(images/header-tips.jpg);
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+}
+
+.steps {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.steps h2 {
+    color: #1e5170;
+    margin-bottom: 2em;
+}
+
+/*----- START Tabs ------------------------------------------------------*/
+.tabs {
+    overflow: hidden;
+}
+
+/*----- Tab Links -----*/
+.tabs a {
+    text-decoration: none;
+}
+
+.tab-links {
+    margin-left: 36px;
+}
+
+.tab-links li {
+    margin: 0px 5px;
+    float: left;
+    list-style: none;
+}
+
+.tab1-bg-color {
+    background-color: #FCC4B8;
+}
+
+.tab2-bg-color {
+    background-color: #A0D487;
+}
+
+.tab3-bg-color {
+    background-color: #BBDBE8;
+}
+
+.tab4-bg-color {
+    background-color: #FFF27D;
+}
+
+.tab5-bg-color {
+    background-color: #D27AFB;
+}
+
+.tab-links a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5em 0.5em 0 0;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all linear 0.15s;
+}
+
+.tab-links a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* ????? стоит ли */
+/* li.active a,
+li.active a:hover {
+    background: #fff;
+    color: #4c4c4c; 
+} */
+
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding: 2.55em;
+    width: 65%;
+}
+
+.tab {
+    display: none;
+    border-radius: 0 0.5em;
+    padding: 2em;
+}
+
+.tab.active,
+.inline-flex {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.decluttering img,
+.img-tab-content {
+    width: 40%;
+    border-radius: 0.5em;
+}
+
+.inline-flex.text-side div,
+.decluttering div {
+    width: 50%;
+}
+
+/*-------------END TABS---------------------------------------------------------*/

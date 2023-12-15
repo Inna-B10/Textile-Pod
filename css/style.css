@@ -66,6 +66,14 @@ header {
   width: 80px;
 }
 
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
 /*------END header ---------------------*/
 
 footer {

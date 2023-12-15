@@ -8,10 +8,6 @@ header {
   padding: 10px 10px 10px 30px;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-  gap: 285px;
-=======
->>>>>>> cf77a4263b8e17b5d3532da6878194d31baeaee8
   background: #fff;
   position: relative;
 }
@@ -40,10 +36,7 @@ header #logo {
 }
 footer {
   display: flex;
-<<<<<<< HEAD
   padding: 0px;
-=======
->>>>>>> cf77a4263b8e17b5d3532da6878194d31baeaee8
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -83,16 +76,13 @@ footer .text-wrap {
 footer .text-wrap a {
   color: #000;
   text-align: center;
-  font-family: Anonymous Pro;
-<<<<<<< HEAD
+  font-family: Raleway;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-=======
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
->>>>>>> cf77a4263b8e17b5d3532da6878194d31baeaee8
   line-height: normal;
   text-decoration: none;
 }

@@ -13,22 +13,10 @@ body {
 }
 
 
-.flex {
-    display: flex;
-}
-
-.column {
-    flex-direction: column;
-}
-
-/* .f-right {
-    float: right;
-} */
-
+/*------ START header ----------------*/
 header {
     width: 100%;
     min-height: 350px;
-    background-image: url(images/header-tips.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-top: 30px;
@@ -40,7 +28,7 @@ header {
     width: 100%;
     height: 90px;
     background: #fff;
-    color: #000;
+    color: #c7c7c7;
     text-transform: uppercase;
     opacity: 0.6;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
@@ -93,13 +81,31 @@ header {
     width: 80px;
 }
 
+/*------END header ---------------------*/
+.tips-header-img {
+    background-image: url(images/header-tips.jpg);
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
 h1 {
     color: #fff;
 }
 
-main {
+.steps {
     width: 80%;
     margin: 100px auto;
+}
+
+.steps h2 {
+    color: #1e5170;
+    margin-bottom: 2em;
 }
 
 /*----- START Tabs ------------------------------------------------------*/
@@ -184,14 +190,15 @@ li.active a:hover {
     align-items: center;
 }
 
+.decluttering img,
 .img-tab-content {
-    width: 200px;
+    width: 40%;
     border-radius: 0.5em;
 }
 
-
-.inline-flex.text-side div {
-    width: 60%;
+.inline-flex.text-side div,
+.decluttering div {
+    width: 50%;
 }
 
 /*-------------END TABS---------------------------------------------------------*/

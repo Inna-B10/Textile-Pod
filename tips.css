@@ -8,7 +8,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: calc(1em + 0.5vw);
-    background: linear-gradient(0deg, rgba(125, 202, 255, 1) 0%, rgba(255, 248, 190, 1) 66%);
+    background: rgb(190, 222, 244);
+    background: -moz-linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
+    background: -webkit-linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
+    background: linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bedef4", endColorstr="#ffffff", GradientType=1);
 }
 
 
@@ -21,20 +25,21 @@ header {
     padding-top: 30px;
     justify-content: end;
     align-items: end;
+    border-radius: 0 0 0.5em 0.5em;
 }
 
 #navbar {
     width: 100%;
     height: 90px;
-    background: #fff;
-    /* color: #c7c7c7; */
+    background: #e9f4fb;
     text-transform: uppercase;
-    opacity: 0.6;
+    opacity: 0.7;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    border-radius: 0 0 0.5em 0.5em;
+    border-bottom: 1px solid #7e7e7e;
 }
 
 .nav-bar {
-    /* ?margin top -100px */
     margin: 0px auto 0px auto;
     padding: 5px 0px;
     width: 70%;
@@ -45,26 +50,27 @@ header {
 }
 
 #navbar a {
-    /* float: left; */
-    /* display: block; */
-    /* color: #f2f2f2; */
-    /* text-align: center; */
-    /* padding: 14px 16px; */
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
     color: #000;
+    padding: 10px 20px;
+    border: 1px solid #e9f4fb;
+    border-radius: 25px;
+
 }
 
 #navbar a:hover {
     background-color: #ddd;
     color: black;
+    border: 1px solid #000;
+    border-radius: 25px;
 }
 
-/* #navbar a.active {
-    background-color: #04AA6D;
-    color: white;
-} */
-
+#navbar.sticky a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #ddd;
+}
 
 .sticky {
     position: fixed;
@@ -81,11 +87,6 @@ header {
     width: 80px;
 }
 
-/*------END header ---------------------*/
-.tips-header-img {
-    background-image: url(images/header-tips.jpg);
-}
-
 .flex {
     display: flex;
 }
@@ -94,111 +95,234 @@ header {
     flex-direction: column;
 }
 
-h1 {
-    color: #fff;
+/*------ END header ------------------*/
+
+/*------ START footer ----------------*/
+footer,
+footer .nav-footer,
+footer .logo-wrap,
+footer .logo-wrap a,
+footer .text-wrap {
+    justify-content: center;
+    align-items: center;
 }
 
-.steps {
+footer {
+    background: #93c8ec;
+}
+
+footer .nav-footer {
+    padding: 12px 0px;
+    gap: 4px;
+}
+
+footer .logo-wrap {
+    gap: 25px;
+}
+
+footer .logo-wrap a {
+    padding: 7px;
+    gap: 10px;
+    border-radius: 43px;
+    border: 1px solid #000;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-color: #aaa;
+    }
+}
+
+footer .text-wrap {
+    padding: 9px 0px;
+    gap: 29px;
+}
+
+footer .text-wrap a {
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    border-bottom: 1px solid #93c8ec;
+
+    &:hover {
+        border-bottom: 1px solid #000;
+    }
+}
+
+/*------- END footer -----------------*/
+
+.tips-header-img {
+    background-image: url(images/header-tips.jpg);
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 0 #604545, 2px -2px 0 #604545, -2px 2px 0 #604545, -2px -2px 0 #604545, 2px 0px 0 #604545, 0px 2px 0 #604545, -2px 0px 0 #604545, 0px -2px 0 #604545;
+}
+
+.i-slogan1 {
+    position: relative;
+    bottom: 120px;
+    right: 330px;
+}
+
+.i-slogan2 {
+    position: relative;
+    bottom: 70px;
+    right: 60px;
+}
+
+/*------ Start tips ------------------------------------*/
+.advices {
     width: 80%;
     margin: 100px auto;
 }
 
-.steps h2 {
+.advices img {
+    float: right;
+    margin-left: 50px;
+}
+
+.advices h2 {
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+.advices h2 {
+    text-shadow: #e0e0e0 1px 1px 0, 2px 1px 1px #2FAFB5;
+}
+
+.advices h2,
+.advices h3 {
     color: #1e5170;
-    margin-bottom: 2em;
 }
 
-/*----- START Tabs ------------------------------------------------------*/
-.tabs {
+.advices h3 {
+    margin: 3em 0 1em 0;
+}
+
+.advices h3:nth-of-type(2) {
+    margin: 100px auto 35px auto;
+    text-align: center;
+}
+
+h3 {
+    width: 800px;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #1e5170;
+}
+
+.advices ol {
+    border: solid #e3e3e3;
+    border-width: 1px 0 0 1px;
+    background-color: #fffedf;
+    width: fit-content;
+    padding: 25px;
+    box-shadow: 3px 3px 3px 1px #cfcfcf;
+
+}
+
+.advices ol,
+.advices ul {
+    list-style-position: inside;
+    margin: 50px 80px;
+}
+
+/*------ START Tabs ------------------------------------*/
+.tabs-section {
     overflow: hidden;
+    width: 80%;
+    margin: 100px auto;
+    align-items: center;
 }
 
-/*----- Tab Links -----*/
-.tabs a {
-    text-decoration: none;
-}
 
-.tab-links {
-    margin-left: 36px;
-}
-
-.tab-links li {
-    margin: 0px 5px;
-    float: left;
-    list-style: none;
-}
-
-.tab1-bg-color {
-    background-color: #FCC4B8;
-}
-
-.tab2-bg-color {
-    background-color: #A0D487;
-}
-
-.tab3-bg-color {
-    background-color: #BBDBE8;
-}
-
-.tab4-bg-color {
-    background-color: #FFF27D;
-}
-
-.tab5-bg-color {
-    background-color: #D27AFB;
-}
-
-.tab-links a {
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.5em 0.5em 0 0;
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
-    display: inline-block;
-    transition: all linear 0.15s;
-}
-
-.tab-links a:hover {
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-/* ????? стоит ли */
-/* li.active a,
-li.active a:hover {
-    background: #fff;
-    color: #4c4c4c; 
-} */
-
-
-/*----- Content of Tabs -----*/
-.tab-content {
-    padding: 2.55em;
-    width: 65%;
-}
-
-.tab {
+.tab-canva {
     display: none;
-    border-radius: 0 0.5em;
+    border-radius: 0 0.5em 0.5em;
     padding: 2em;
+    border: 1px solid #604545;
+    background-color: #ffffff;
 }
 
-.tab.active,
+
+.tab-canva.active,
 .inline-flex {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.decluttering img,
+/*----- Tab Links ------------------*/
+.tab-links {
+    margin-left: -85px;
+    width: 800px;
+}
+
+.tab-links a {
+    padding: 0.5rem 1.5rem;
+    border: solid #604545;
+    border-width: 1px 1px 0 0;
+    border-radius: 0 0.5em 0 0;
+    color: #1e5170;
+    background-color: #93c8ec;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    background-size: 200% auto;
+}
+
+.tab-links a:hover {
+    background-position: right center;
+}
+
+.tab-links li:first-child a {
+    border-width: 1px 1px 0 1px;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.tab-links li {
+    margin: 0px -8px;
+    /* float: left; */
+    display: inline;
+    list-style: none;
+}
+
+/* ????? стоит ли */
+li.active a,
+li.active a:hover {
+    /* background: #fff; */
+    /* color: #4c4c4c;  */
+
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    width: 900px;
+}
+
+.advices img,
 .img-tab-content {
     width: 40%;
+    height: fit-content;
     border-radius: 0.5em;
 }
 
-.inline-flex.text-side div,
-.decluttering div {
+.inline-flex.text-side div {
     width: 50%;
 }
 
-/*-------------END TABS---------------------------------------------------------*/
+/*-------------END TABS---------------------------------*/

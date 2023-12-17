@@ -8,11 +8,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: calc(1em + 0.5vw);
-    background: rgb(190, 222, 244);
-    background: -moz-linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
-    background: -webkit-linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
-    background: linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bedef4", endColorstr="#ffffff", GradientType=1);
 }
 
 
@@ -157,12 +152,20 @@ footer .text-wrap a {
 }
 
 /*------- END footer -----------------*/
+.i-main {
+    background: rgb(190, 222, 244);
+    background: -moz-linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
+    background: -webkit-linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
+    background: linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bedef4", endColorstr="#ffffff", GradientType=1);
+}
 
 .tips-header-img {
     background-image: url(images/header-tips.jpg);
 }
 
-h1 {
+h1 .i-slogan1,
+h1 .i-slogan2 {
     color: #fff;
     text-shadow: 2px 2px 0 #604545, 2px -2px 0 #604545, -2px 2px 0 #604545, -2px -2px 0 #604545, 2px 0px 0 #604545, 0px 2px 0 #604545, -2px 0px 0 #604545, 0px -2px 0 #604545;
 }

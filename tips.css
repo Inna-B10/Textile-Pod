@@ -164,8 +164,8 @@ footer .text-wrap a {
     background-image: url(images/header-tips.jpg);
 }
 
-h1 .i-slogan1,
-h1 .i-slogan2 {
+.i-slogan1,
+.i-slogan2 {
     color: #fff;
     text-shadow: 2px 2px 0 #604545, 2px -2px 0 #604545, -2px 2px 0 #604545, -2px -2px 0 #604545, 2px 0px 0 #604545, 0px 2px 0 #604545, -2px 0px 0 #604545, 0px -2px 0 #604545;
 }

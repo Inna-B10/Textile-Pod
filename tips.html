@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Raleway&display=swap"
       rel="stylesheet"
     />
+        <!-- handwrite font -->
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="tabs.js"></script>
 
@@ -34,19 +36,18 @@
     <main>
       <section class="advices">
         <h2>Do you want breathe new life into your old clothes?</h2>
-        <div>
-          <img src="images/decluttering.jpg" alt="Wardrobe Decluttering">
-          <p>
-            If you want make some space in your wardrobe and make room for new stuff, try decluttering it. But what do you do with all those old clothes, you ask? Well, here are some ideas - donate, recycle, sell, make a swap party, use for hobby projects. Before making a choice, it's essential to sift through your wardrobe. There are several ways to go about it, but let's start with the basic steps to get you going.
-          </p>
-        </div>
-        <h3>Streamline Your Closet</h3>
-          <div>
+        <div class="flex">
+          <div class="advices-text-side flex column">
             <p>
+              If you want make some space in your wardrobe and make room for new stuff, try decluttering it. But what do you do with all those old clothes, you ask? Well, here are some ideas - donate, recycle, sell, make a swap party, use for hobby projects. Before making a choice, it's essential to sift through your wardrobe. There are several ways to go about it, but let's start with the basic steps to get you going.
+            </p>
+            <h3>Streamline Your Closet</h3>
+            <div>
+              <p>
               Initiate the decluttering process by systematically sorting through your wardrobe. This involves separating out clothing, footwear, accessories, handbags, and purses that no longer serve your needs, fit properly, or align with your preferences.
               <br /> <br />
               When uncertain about whether to part with an item, consider the following inquiries:
-              <ol>
+              <ol class="animated-box">
                 <li>Have I worn this within the past year?</li>
                 <li>Does it fit me well?</li>
                 <li>Does it evoke a positive feeling when worn?</li>
@@ -55,6 +56,10 @@
               If any of these questions result in a negative response, it's an indication that it is time for items to leave your wardrobe.
             </p>
           </div>
+          </div>
+          <div class="advices-img-div">
+          </div>
+        </div>
           <h3>Key Tips for Organizing and Streamlining Your Wardrobe:</h3>
           <ul>
             <li>Allocate a dedicated time and space for the decluttering process to maintain focus.</li>
@@ -246,6 +251,29 @@
           navbar.classList.remove("sticky");
         }
       }
+
+
+      document.addEventListener("DOMContentLoaded", function(event) {
+    document.addEventListener("scroll", function(event) {
+        const animatedBoxes = document.getElementsByClassName("animated-box");
+        const windowOffsetTop = window.innerHeight + window.scrollY;
+
+        Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
+            const animatedBoxOffsetTop = animatedBox.offsetTop;
+
+            if (windowOffsetTop >= animatedBoxOffsetTop) {
+                addClass(animatedBox, "fadeInUp");
+            }
+        });
+    });
+});
+
+function addClass(element, className) {
+    const arrayClasses = element.className.split(" ");
+    if (arrayClasses.indexOf(className) === -1) {
+        element.className += " " + className;
+    }
+}
     </script>
   </body>
 </html>

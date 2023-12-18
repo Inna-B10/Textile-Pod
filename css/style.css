@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: calc(1em + 0.5vw);
 }
@@ -37,7 +37,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
-
 }
 
 #navbar a {
@@ -58,7 +57,7 @@ header {
   opacity: 1 !important;
 }
 
-.sticky+.content {
+.sticky + .content {
   padding-top: 60px;
 }
 
@@ -84,6 +83,7 @@ footer {
   align-items: center;
   gap: 10px;
   background: #c9c8c8;
+  box-shadow: 0 0 10px #444;
 }
 
 footer .nav-footer {

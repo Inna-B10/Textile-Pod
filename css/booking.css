@@ -12,7 +12,7 @@ main #tips {
   align-self: stretch;
 }
 main #tips h1 {
-  color: #000;
+  color: #444;
   text-align: center;
   font-family: Montserrat;
   font-size: 25px;
@@ -21,7 +21,7 @@ main #tips h1 {
   line-height: normal;
 }
 main #tips p {
-  color: #000;
+  color: #444;
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
@@ -34,6 +34,7 @@ main #steps {
   flex-wrap: wrap;
   align-items: flex-end;
   align-self: stretch;
+  box-shadow: 0 0 10px #444;
 }
 main #steps .step-container {
   display: flex;
@@ -52,12 +53,13 @@ main #steps .step-container p {
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #000;
+  color: #444;
   text-align: center;
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  text-shadow: 0 0 2px #444;
 }
 main #steps #step1 {
   background: #795a3e;
@@ -71,15 +73,19 @@ main #steps #step3 {
 main #steps #step4 {
   background: #c2dfeb;
 }
+main #form-schedule {
+  gap: 0px;
+}
 main #form-schedule #form-wrap {
-  gap: 10px;
-  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  gap: 16px;
 }
 main #form-schedule #form-wrap .label-wrap {
   width: 360px;
 }
 main #form-schedule #form-wrap h1 {
-  padding-top: 20px;
   color: #795a3e;
   font-family: Montserrat;
   font-size: 30px;
@@ -109,22 +115,43 @@ main #form-schedule #form-wrap select {
 main #form-schedule #form-wrap .small-input {
   width: 100%;
 }
-main #form-schedule .flex-ender {
+main #form-schedule #form-wrap button {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: flex-start;
+  width: fit-content;
+  padding: 10px 20px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  border-radius: 4px;
+  background: #795a3e;
+  cursor: pointer;
+}
+#truck {
+  width: auto;
 }
 .booking-header-img {
   background-image: url(/images/booking.webp);
   justify-content: flex-start;
   padding: 0;
   background-size: cover;
-  background-position: bottom;
+  background-position-x: bottom;
+  background-position-y: -900px;
+  box-shadow: 0 0 10px #444;
+  min-height: 400px;
+  background-attachment: fixed;
 }
-
-.flex-column {
+.booking-header-img .flex-column {
   display: flex;
   flex-direction: column;
+}
+.dflex {
+  display: flex;
 }
 .flex-row {
   display: flex;
@@ -136,4 +163,8 @@ main #form-schedule .flex-ender {
 }
 .justify-spacebetween {
   justify-content: space-between;
+}
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }

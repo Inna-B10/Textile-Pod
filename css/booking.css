@@ -136,19 +136,20 @@ main #form-schedule #form-wrap button {
   width: auto;
 }
 .booking-header-img {
-  background-image: url(/images/booking.webp);
+  background-image: url(/images/booking.jpg);
+  display: flex;
   justify-content: flex-start;
   padding: 0;
+  gap: 100px;
+  background-position-y: -400px;
   background-size: cover;
-  background-position-x: bottom;
-  background-position-y: -900px;
   box-shadow: 0 0 10px #444;
-  min-height: 400px;
   background-attachment: fixed;
 }
-.booking-header-img .flex-column {
-  display: flex;
-  flex-direction: column;
+.booking-header-img h1 {
+  color: #fff;
+  text-align: center;
+  width: fit-content;
 }
 .dflex {
   display: flex;

@@ -37,24 +37,25 @@ main #steps {
 }
 main #steps .step-container {
   display: flex;
-  height: 500px;
+  height: 400px;
   padding: 10px;
+  padding-top: 40px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  gap: 38px;
+  gap: 50px;
   flex: 1 0 0;
 }
 main #steps .step-container p {
   display: flex;
-  max-width: 298px;
+  max-width: 350px;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
   color: #000;
   text-align: center;
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
 }
@@ -72,7 +73,7 @@ main #steps #step4 {
 }
 main #form-schedule #form-wrap {
   gap: 10px;
-  padding: 0px 50px;
+  padding: 0px 100px;
 }
 main #form-schedule #form-wrap .label-wrap {
   width: 360px;
@@ -88,7 +89,7 @@ main #form-schedule #form-wrap h1 {
   max-width: 70%;
 }
 main #form-schedule #form-wrap .input-wrapper {
-  width: 360px;
+  width: 500px;
   gap: 10px;
 }
 main #form-schedule #form-wrap input {
@@ -96,14 +97,14 @@ main #form-schedule #form-wrap input {
   border-radius: 4px;
   background: #f1f8ff;
   border: none;
-  width: 360px;
+  width: 500px;
 }
 main #form-schedule #form-wrap select {
   padding: 12px;
   border-radius: 4px;
   background: #f1f8ff;
   border: none;
-  width: 360px;
+  width: 500px;
 }
 main #form-schedule #form-wrap .small-input {
   width: 100%;

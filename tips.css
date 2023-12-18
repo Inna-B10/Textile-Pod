@@ -152,7 +152,7 @@ footer .text-wrap a {
 }
 
 /*------- END footer -----------------*/
-.i-main {
+.i-body {
     background: rgb(190, 222, 244);
     background: -moz-linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
     background: -webkit-linear-gradient(0deg, rgba(190, 222, 244, 1) 21%, rgba(255, 255, 255, 1) 44%);
@@ -266,15 +266,12 @@ h3 {
 
 /*----- Tab Links ------------------*/
 .tab-links {
-    margin-left: -85px;
+    margin-left: -100px;
     width: 800px;
 }
 
 .tab-links a {
     padding: 0.5rem 1.5rem;
-    border: solid #604545;
-    border-width: 1px 1px 0 0;
-    border-radius: 0 0.5em 0 0;
     color: #1e5170;
     background-color: #93c8ec;
     font-size: 16px;
@@ -286,6 +283,10 @@ h3 {
     transition: 0.5s;
     background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
     background-size: 200% auto;
+    border: 1px solid #604545;
+    border-bottom: none !important;
+    /* border-width: 1px 1px 0 0; */
+    border-radius: 0.5em 0.5em 0 0;
 }
 
 .tab-links a:hover {
@@ -298,7 +299,7 @@ h3 {
 }
 
 .tab-links li {
-    margin: 0px -8px;
+    /* margin: 0px -8px; */
     /* float: left; */
     display: inline;
     list-style: none;

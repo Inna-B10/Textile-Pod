@@ -188,52 +188,92 @@ footer .text-wrap a {
     margin: 100px auto;
 }
 
-.advices img {
-    float: right;
-    margin-left: 50px;
+.advices-img-div {
+    width: 40%;
+    background-image: url(images/decluttering.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0.5em;
+    margin-left: 40px;
+}
+
+.advices-text-side {
+    width: 60%;
+    justify-content: space-evenly;
 }
 
 .advices h2 {
     margin-bottom: 4em;
-    text-align: center;
-}
-
-.advices h2 {
     text-shadow: #e0e0e0 1px 1px 0, 2px 1px 1px #2FAFB5;
 }
+
 
 .advices h2,
 .advices h3 {
     color: #1e5170;
+    text-align: center;
 }
 
 .advices h3 {
     margin: 3em 0 1em 0;
 }
 
-.advices h3:nth-of-type(2) {
-    margin: 100px auto 35px auto;
-    text-align: center;
+.advices>h3 {
+    margin-top: 100px;
 }
 
-h3 {
-    width: 800px;
-    margin-bottom: 70px;
-    text-align: center;
-    color: #1e5170;
-}
 
 .advices ol {
     border: solid #e3e3e3;
     border-width: 1px 0 0 1px;
     background-color: #fffedf;
     width: fit-content;
-    padding: 25px;
+    padding: 25px 25px 25px 50px;
     box-shadow: 3px 3px 3px 1px #cfcfcf;
-
+    position: relative;
+    margin: 60px auto 50px auto;
+    z-index: -1;
+    font-family: 'Caveat', cursive;
+    line-height: 36px;
+    font-size: 24px;
 }
 
-.advices ol,
+.fadeInUp {
+    /* visibility: visible; */
+    animation-duration: 2000ms;
+    animation-delay: 300ms;
+    animation-name: fadeInUp;
+}
+
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.advices ol::before {
+    content: ' ';
+    position: absolute;
+    background-image: url(images/lamp-bulb.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -25px;
+    left: -38px;
+    width: 75px;
+    height: 75px;
+}
+
+/* .advices ol, */
 .advices ul {
     list-style-position: inside;
     margin: 50px 80px;
@@ -318,11 +358,14 @@ li.active a:hover {
     width: 900px;
 }
 
-.advices img,
+.advices-img-div img,
 .img-tab-content {
-    width: 40%;
     height: fit-content;
     border-radius: 0.5em;
+}
+
+.img-tab-content {
+    width: 40%;
 }
 
 .inline-flex.text-side div {

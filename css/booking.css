@@ -148,8 +148,10 @@ main #form-schedule #form-wrap button {
 }
 .booking-header-img h1 {
   color: #fff;
+  font-size: 25px;
   text-align: center;
   width: fit-content;
+  text-shadow: 0 0 4px #444;
 }
 .dflex {
   display: flex;

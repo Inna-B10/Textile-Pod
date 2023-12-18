@@ -15,8 +15,6 @@
   </head>
   <body>
     <header class="flex column booking-header-img">
-      <h1>Transforming Wardrobes</h1>
-      <h1>Transforming Communities</h1>
       <nav id="navbar">
         <div class="nav-bar flex">
           <a href="index.html">Home</a>
@@ -25,6 +23,8 @@
           <a href="tips.html">Tips</a>
           <a href="contact.html">Contact us</a>
         </div>
+        <h1>Transforming Wardrobes</h1>
+        <h1>Transforming Communities</h1>
       </nav>
     </header>
     <main>
@@ -103,14 +103,14 @@
           </p>
         </div>
       </section>
-      <section id="form-schedule" class="flex-row">
+      <section id="form-schedule" class="flex-row justify-spacebetween">
         <form action="" id="form-wrap" class="flex-column">
           <h1>Schedule a suitable time and date for your pick up</h1>
           <div class="label-wrap flex-column">
             <label for="">Name</label>
-            <div class="input-wrapper">
-              <input type="text" placeholder="First name" />
-              <input type="text" placeholder="Last name" />
+            <div class="input-wrapper flex-row">
+              <input class="small-input" type="text" placeholder="First name" />
+              <input class="small-input" type="text" placeholder="Last name" />
             </div>
           </div>
           <div class="label-wrap flex-column"></div>
@@ -128,8 +128,9 @@
           </div>
           <div class="label-wrap flex-column">
             <label for="">Date and time</label>
-            <div class="input-wrapper">
-              <input type="date" /> <input type="time" />
+            <div class="input-wrapper flex-row">
+              <input class="small-input" type="date" />
+              <input class="small-input" type="time" />
             </div>
           </div>
           <div class="label-wrap flex-column">
@@ -143,6 +144,9 @@
             </select>
           </div>
         </form>
+        <div class="flex-ender">
+          <img src="images/Truck.webp" alt="" />
+        </div>
       </section>
     </main>
     <footer>

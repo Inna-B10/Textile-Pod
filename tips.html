@@ -173,10 +173,11 @@
         <!-- TABS END -->
       </section>
     </main>
+    <!-- FOOTER -->
     <footer>
       <div class="nav-footer flex column">
         <div class="logo-wrap flex">
-          <a class="flex" href="instagram.com">
+          <a class="flex" href="http://instagram.com" title="Instagram">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -212,7 +213,7 @@
               />
             </svg>
           </a>
-          <a class="flex" href="instagram.com">
+          <a class="flex" href="http://twitter.com" title="Twitter">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -228,52 +229,13 @@
           </a>
         </div>
         <div class="text-wrap flex">
-          <a href="">Home</a>
-          <a href="">Schedule pickup</a>
-          <a href="">Contact</a>
-          <a href="">Privacy policy</a>
+          <a href="index.html" title="Homepage">Home</a>
+          <a href="booking.html" title="Schedule pickup">Schedule pickup</a>
+          <a href="contact" title="Contact us">Contact</a>
+          <a href="#">Privacy policy</a>
         </div>
         <p>Textile pod @ 2023</p>
       </div>
     </footer>
-    <script>
-      window.onscroll = function () {
-        myFunction();
-      };
-
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky");
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-
-
-      document.addEventListener("DOMContentLoaded", function(event) {
-    document.addEventListener("scroll", function(event) {
-        const animatedBoxes = document.getElementsByClassName("animated-box");
-        const windowOffsetTop = window.innerHeight + window.scrollY;
-
-        Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
-            const animatedBoxOffsetTop = animatedBox.offsetTop;
-
-            if (windowOffsetTop >= animatedBoxOffsetTop) {
-                addClass(animatedBox, "fadeInUp");
-            }
-        });
-    });
-});
-
-function addClass(element, className) {
-    const arrayClasses = element.className.split(" ");
-    if (arrayClasses.indexOf(className) === -1) {
-        element.className += " " + className;
-    }
-}
-    </script>
   </body>
 </html>

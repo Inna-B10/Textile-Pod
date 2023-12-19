@@ -231,7 +231,6 @@ footer .text-wrap a {
     margin-top: 100px;
 }
 
-
 .advices ol {
     border: solid #e3e3e3;
     border-width: 1px 0 0 1px;
@@ -247,7 +246,6 @@ footer .text-wrap a {
 }
 
 .fadeInUp {
-    /* display: none; */
     visibility: hidden;
     opacity: 0;
     animation-duration: 2000ms;
@@ -255,8 +253,6 @@ footer .text-wrap a {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
-
 
 @keyframes fadeInUp {
     0% {
@@ -290,14 +286,16 @@ footer .text-wrap a {
 .advices ul {
     list-style-position: inside;
     margin: 50px auto;
-    position: relative;
     border: 2px groove #FFFEDF;
     padding: 30px;
     border-radius: 0.5em;
 }
 
-.advices ul::before {
-    content: '';
+.quick-tips-boble {
+    position: relative;
+}
+
+#animated-box2 {
     position: absolute;
     top: -40px;
     right: -25px;
@@ -307,6 +305,108 @@ footer .text-wrap a {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.wobble {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate(-5deg);
+        transform: translate3d(-25%, 0, 0) rotate(-5deg)
+    }
+
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate(3deg);
+        transform: translate3d(20%, 0, 0) rotate(3deg)
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate(-3deg);
+        transform: translate3d(-15%, 0, 0) rotate(-3deg)
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate(2deg);
+        transform: translate3d(10%, 0, 0) rotate(2deg)
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate(-1deg);
+        transform: translate3d(-5%, 0, 0) rotate(-1deg)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate(-5deg);
+        transform: translate3d(-25%, 0, 0) rotate(-5deg)
+    }
+
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate(3deg);
+        transform: translate3d(20%, 0, 0) rotate(3deg)
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate(-3deg);
+        transform: translate3d(-15%, 0, 0) rotate(-3deg)
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate(2deg);
+        transform: translate3d(10%, 0, 0) rotate(2deg)
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate(-1deg);
+        transform: translate3d(-5%, 0, 0) rotate(-1deg)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------ START Tabs ------------------------------------*/
 .tabs-section {
@@ -341,8 +441,8 @@ footer .text-wrap a {
 
 .tab-links a {
     padding: 0.5rem 1.5rem;
-    color: #FFFEDF;
-    text-shadow: 2px 1px 1px #000;
+    color: #1e5170;
+    text-shadow: 0px 1px 0px #000;
     background-color: #93c8ec;
     font-size: 16px;
     font-weight: 600;

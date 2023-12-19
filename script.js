@@ -21,17 +21,18 @@ jQuery(document).ready(function () {
   });
 });
 
-// animations
+// animations box1
 document.addEventListener("DOMContentLoaded", function (event) {
   document.addEventListener("scroll", function (event) {
-    const animatedBoxes = document.getElementsByClassName("animated-box");
+    const animatedBoxes1 = document.getElementsByClassName("animated-box1");
+    const animatedBoxes2 = document.getElementsByClassName("animated-box2");
     const windowOffsetTop = window.innerHeight + window.scrollY;
 
-    Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
-      const animatedBoxOffsetTop = animatedBox.offsetTop;
+    Array.prototype.forEach.call(animatedBoxes1, (animatedBox1) => {
+      const animatedBox1OffsetTop = animatedBox1.offsetTop;
 
-      if (windowOffsetTop >= animatedBoxOffsetTop) {
-        addClass(animatedBox, "fadeInUp");
+      if (windowOffsetTop >= animatedBox1OffsetTop) {
+        addClass(animatedBox1, "fadeInUp");
       }
     });
   });
@@ -43,6 +44,17 @@ function addClass(element, className) {
     element.className += " " + className;
   }
 }
+//animation box2
+//credits to Espen
+const ul = document.querySelector(".quick-tips-boble");
+const animBox = document.getElementById("animated-box2");
+
+ul.addEventListener("mouseover", () => {
+  animBox.classList.add("wobble");
+});
+ul.addEventListener("mouseleave", () => {
+  animBox.classList.remove("wobble");
+});
 
 // sticky nav
 document.addEventListener("scroll", (event) => {

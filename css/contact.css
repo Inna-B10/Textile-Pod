@@ -34,6 +34,7 @@ textarea {
   display: flex;
   flex-direction: column;
   padding: 20px 50px;
+  padding-right: 100px;
   gap: 100px;
   background: rgba(107, 107, 107, 0.11);
 }

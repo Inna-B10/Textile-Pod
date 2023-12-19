@@ -171,3 +171,7 @@ main #form-schedule #form-wrap button {
   display: flex;
   flex-wrap: wrap;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}

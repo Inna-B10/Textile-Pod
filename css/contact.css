@@ -1,0 +1,53 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.contact-header-img {
+  background-image: url(/images/contact.jpg);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  gap: 100px;
+  background-size: cover;
+  background-position-y: -100px;
+  box-shadow: 0 0 10px #444;
+  background-attachment: fixed;
+}
+.contact-header-img h1 {
+  color: black;
+  justify-content: center;
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 0 0 4px black;
+}
+textarea {
+  padding: 12px;
+  border-radius: 4px;
+  background: #f1f8ff;
+  border: none;
+  width: 500px;
+  resize: none;
+}
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  gap: 100px;
+  background: rgba(107, 107, 107, 0.11);
+}
+#details-wrapper {
+  gap: 20px;
+}
+#sponsors-sec {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.sponsors img {
+  width: 400px;
+}
+body footer {
+  margin-top: auto;
+}

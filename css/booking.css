@@ -53,13 +53,13 @@ main #steps .step-container p {
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #444;
+  color: whitesmoke;
   text-align: center;
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  text-shadow: 0 0 2px #444;
+  text-shadow: 0 0 6px black;
 }
 main #steps #step1 {
   background: #795a3e;
@@ -148,8 +148,10 @@ main #form-schedule #form-wrap button {
 }
 .booking-header-img h1 {
   color: #fff;
+  font-size: 25px;
   text-align: center;
   width: fit-content;
+  text-shadow: 0 0 4px #444;
 }
 .dflex {
   display: flex;
@@ -168,4 +170,8 @@ main #form-schedule #form-wrap button {
 .flex-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }

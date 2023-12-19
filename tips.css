@@ -24,6 +24,7 @@ header {
 }
 
 #navbar {
+    z-index: 10;
     width: 100%;
     height: 90px;
     background: #e9f4fb;
@@ -104,11 +105,14 @@ footer .text-wrap {
 
 footer {
     background: #93c8ec;
+    box-shadow: 0 0 10px #444;
+    border-radius: 0.5em 0.5em 0 0;
 }
 
 footer .nav-footer {
-    padding: 12px 0px;
+    padding: 16px 0px 12px 0;
     gap: 4px;
+    /* border-top: 1px solid #604545; */
 }
 
 footer .logo-wrap {
@@ -207,11 +211,16 @@ footer .text-wrap a {
     text-shadow: #e0e0e0 1px 1px 0, 2px 1px 1px #2FAFB5;
 }
 
-
+.tabs-section h3,
 .advices h2,
 .advices h3 {
     color: #1e5170;
     text-align: center;
+}
+
+.tabs-section h3 {
+    width: 60%;
+    margin-bottom: 3em;
 }
 
 .advices h3 {
@@ -232,17 +241,19 @@ footer .text-wrap a {
     box-shadow: 3px 3px 3px 1px #cfcfcf;
     position: relative;
     margin: 60px auto 50px auto;
-    z-index: -1;
     font-family: 'Caveat', cursive;
     line-height: 36px;
     font-size: 24px;
 }
 
 .fadeInUp {
-    /* visibility: visible; */
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
     animation-duration: 2000ms;
-    animation-delay: 300ms;
     animation-name: fadeInUp;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 
@@ -250,15 +261,18 @@ footer .text-wrap a {
 @keyframes fadeInUp {
     0% {
         opacity: 0;
+        visibility: hidden;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
     }
 
     100% {
         opacity: 1;
+        visibility: visible;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
+
 }
 
 .advices ol::before {
@@ -273,10 +287,25 @@ footer .text-wrap a {
     height: 75px;
 }
 
-/* .advices ol, */
 .advices ul {
     list-style-position: inside;
-    margin: 50px 80px;
+    margin: 50px auto;
+    position: relative;
+    border: 2px groove #FFFEDF;
+    padding: 30px;
+    border-radius: 0.5em;
+}
+
+.advices ul::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -25px;
+    height: 100%;
+    width: 100px;
+    background-image: url(images/tips.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /*------ START Tabs ------------------------------------*/
@@ -294,6 +323,7 @@ footer .text-wrap a {
     padding: 2em;
     border: 1px solid #604545;
     background-color: #ffffff;
+    height: 300px;
 }
 
 
@@ -306,13 +336,13 @@ footer .text-wrap a {
 
 /*----- Tab Links ------------------*/
 .tab-links {
-    margin-left: -100px;
-    width: 800px;
+    margin-left: -268px;
 }
 
 .tab-links a {
     padding: 0.5rem 1.5rem;
-    color: #1e5170;
+    color: #FFFEDF;
+    text-shadow: 2px 1px 1px #000;
     background-color: #93c8ec;
     font-size: 16px;
     font-weight: 600;
@@ -325,12 +355,26 @@ footer .text-wrap a {
     background-size: 200% auto;
     border: 1px solid #604545;
     border-bottom: none !important;
-    /* border-width: 1px 1px 0 0; */
     border-radius: 0.5em 0.5em 0 0;
 }
 
 .tab-links a:hover {
     background-position: right center;
+
+}
+
+.tab-links li.active a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #93c8ec;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
 }
 
 .tab-links li:first-child a {
@@ -339,28 +383,22 @@ footer .text-wrap a {
 }
 
 .tab-links li {
-    /* margin: 0px -8px; */
-    /* float: left; */
     display: inline;
     list-style: none;
 }
 
-/* ????? стоит ли */
-li.active a,
-li.active a:hover {
-    /* background: #fff; */
-    /* color: #4c4c4c;  */
 
-}
+
 
 /*----- Content of Tabs -----*/
 .tab-content {
-    width: 900px;
+    width: 965px;
 }
 
 .advices-img-div img,
 .img-tab-content {
     height: fit-content;
+    height: -moz-fit-content;
     border-radius: 0.5em;
 }
 

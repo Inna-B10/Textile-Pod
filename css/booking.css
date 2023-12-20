@@ -136,7 +136,7 @@ main #form-schedule #form-wrap button {
   width: auto;
 }
 .booking-header-img {
-  background-image: url(images/booking.jpg);
+  background-image: url(/images/booking.jpg);
   display: flex;
   justify-content: flex-start;
   padding: 0;

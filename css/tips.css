@@ -410,13 +410,17 @@ footer .text-wrap a {
     border: 1px solid #604545;
     background-color: #ffffff;
     height: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
+.tab-canva.active {
+    display: flex;
+}
 
-.tab-canva.active,
-.inline-flex {
-    display: inline-flex;
-    justify-content: space-around;
+.tab-canva>div {
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 /*----- Tab Links ------------------*/
@@ -493,9 +497,32 @@ footer .text-wrap a {
     justify-content: space-between;
 }
 
+.i-icons {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .i-icons img {
     width: 30px;
     justify-content: space-evenly;
+}
+
+.hr-style {
+    border-width: 1px 0 0 0;
+    border-top: 1px dashed #8c8b8b;
+    margin-bottom: -15px;
+}
+
+.hr-style:after {
+    content: '\002702';
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    left: 0px;
+    padding: 0 5px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
 }
 
 /*------------- END TABS section ---------------------------------*/

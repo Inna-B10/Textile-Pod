@@ -79,6 +79,7 @@ main #form-schedule {
 main #form-schedule #form-wrap {
   display: flex;
   flex-direction: column;
+  margin-right: 40px;
   padding: 20px 50px;
   gap: 16px;
 }
@@ -103,14 +104,14 @@ main #form-schedule #form-wrap input {
   border-radius: 4px;
   background: #f1f8ff;
   border: none;
-  width: 500px;
+  width: 400px;
 }
 main #form-schedule #form-wrap select {
   padding: 12px;
   border-radius: 4px;
   background: #f1f8ff;
   border: none;
-  width: 500px;
+  width: 400px;
 }
 main #form-schedule #form-wrap .small-input {
   width: 100%;
@@ -133,10 +134,10 @@ main #form-schedule #form-wrap button {
   cursor: pointer;
 }
 #truck {
-  width: auto;
+  width: fit-content;
 }
 .booking-header-img {
-  background-image: url(/images/booking.jpg);
+  background-image: url(/images/booking-img.jpg);
   display: flex;
   justify-content: flex-start;
   padding: 0;

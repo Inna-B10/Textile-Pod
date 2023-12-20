@@ -4,14 +4,15 @@ body {
   flex-direction: column;
 }
 .contact-header-img {
-  background-image: url(../images/contact.jpg);
+  background-image: url(../images/contact-us.jpg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 0;
   gap: 100px;
   background-size: cover;
-  background-position-y: -100px;
+  background-position-x: -300px;
+  background-position-y: -200px;
   box-shadow: 0 0 10px #444;
   background-attachment: fixed;
 }
@@ -27,19 +28,26 @@ textarea {
   border-radius: 4px;
   background: #f1f8ff;
   border: none;
-  width: 500px;
+  width: 400px;
   resize: none;
 }
 #contact-info {
   display: flex;
   flex-direction: column;
-  padding: 20px 50px;
+  justify-content: space-around;
+  padding: 0px 50px;
   padding-right: 100px;
-  gap: 100px;
+  gap: 0px;
   background: rgba(107, 107, 107, 0.11);
+}
+#contact-info h1 {
+  text-decoration: 4px overline #795a3e;
 }
 #details-wrapper {
   gap: 20px;
+}
+.info-item-wrapper {
+  gap: 10px;
 }
 #sponsors-sec {
   display: flex;
@@ -50,6 +58,8 @@ textarea {
 }
 #sponsors-sec h1 {
   margin-top: 50px;
+  text-decoration: 4px underline #795a3e;
+  text-underline-offset: 6px;
 }
 .sponsors {
   display: flex;

@@ -3,8 +3,8 @@ document.addEventListener("scroll", (event) => {
   var navbar = document.getElementById("navbar");
 
   if (
-    document.body.scrollTop >= 260 ||
-    document.documentElement.scrollTop >= 260
+    document.body.scrollTop >= 100 ||
+    document.documentElement.scrollTop >= 100
   ) {
     navbar.classList.add("sticky");
   } else {

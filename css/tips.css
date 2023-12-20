@@ -165,7 +165,7 @@ footer .text-wrap a {
 }
 
 .tips-header-img {
-    background-image: url(images/header-tips.jpg);
+    background-image: url(../images/header-tips.jpg);
 }
 
 .i-slogan1,
@@ -194,7 +194,7 @@ footer .text-wrap a {
 
 .advices-img-div {
     width: 40%;
-    background-image: url(images/decluttering.jpg);
+    background-image: url(../images/decluttering.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 0.5em;
@@ -274,7 +274,7 @@ footer .text-wrap a {
 .advices ol::before {
     content: ' ';
     position: absolute;
-    background-image: url(images/lamp-bulb.png);
+    background-image: url(../images/lamp-bulb.png);
     background-repeat: no-repeat;
     background-size: contain;
     top: -25px;
@@ -302,7 +302,7 @@ footer .text-wrap a {
     right: -25px;
     height: 100%;
     width: 100px;
-    background-image: url(images/tips.png);
+    background-image: url(../images/tips.png);
     background-repeat: no-repeat;
     background-size: contain;
 }

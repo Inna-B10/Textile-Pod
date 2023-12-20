@@ -4,7 +4,7 @@ body {
   flex-direction: column;
 }
 .contact-header-img {
-  background-image: url(/images/contact.jpg);
+  background-image: url(images/contact.jpg);
   display: flex;
   justify-content: flex-start;
   align-items: center;

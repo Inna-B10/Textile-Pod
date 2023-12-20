@@ -17,7 +17,6 @@ body {
   background-attachment: fixed;
 }
 .contact-header-img h1 {
-  color: black;
   justify-content: center;
   text-align: center;
   color: whitesmoke;
@@ -51,6 +50,7 @@ textarea {
 }
 #sponsors-sec {
   display: flex;
+  dis
   align-content: center;
   justify-content: space-around;
   text-align: center;
@@ -58,15 +58,18 @@ textarea {
 }
 #sponsors-sec h1 {
   margin-top: 50px;
+  font-weight: 400;
+  color: #444;
   text-decoration: 4px underline #795a3e;
   text-underline-offset: 6px;
 }
 .sponsors {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .sponsors img {
   width: 300px;
+  margin: 20px;
 }
 body footer {
   margin-top: auto;

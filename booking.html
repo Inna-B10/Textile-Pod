@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="css/booking.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="script.js" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
     <title>TextilePod</title>
   </head>
   <body>
@@ -25,7 +27,7 @@
         </div>
       </nav>
       <h1>
-        Have any clothes you're not using? We'll swing by and pick them up,
+        Have clothes you're not using? We'll swing by and pick them up,
         completely free of charge!
       </h1>
     </header>
@@ -320,35 +322,62 @@
         <form action="" id="form-wrap" class="flex-column">
           <h1>Schedule a suitable time and date for your pick up</h1>
           <div class="label-wrap flex-column">
-            <label for="">Name</label>
+            <label for="First name Last name">Name</label>
             <div class="input-wrapper flex-row">
-              <input class="small-input" type="text" placeholder="First name" />
-              <input class="small-input" type="text" placeholder="Last name" />
+              <input
+                class="small-input"
+                type="text"
+                placeholder="First name"
+                name="fname"
+                required
+              />
+              <input
+                class="small-input"
+                type="text"
+                placeholder="Last name"
+                name="lname"
+                required
+              />
             </div>
           </div>
           <div class="label-wrap flex-column"></div>
           <div class="label-wrap flex-column">
-            <label for="">Email</label>
-            <input type="text" placeholder="Email" />
+            <label for="Email">Email</label>
+            <input
+              type="email"
+              placeholder="Email address"
+              name="email"
+              required
+            />
           </div>
           <div class="label-wrap flex-column">
-            <label for="">Phone</label>
-            <input type="text" placeholder="Phone number" />
+            <label for="number">Phone</label>
+            <input
+              type="number"
+              placeholder="Phone number"
+              name="number"
+              required
+            />
           </div>
           <div class="label-wrap flex-column">
-            <label for="">Pick up address</label>
-            <input type="text" placeholder="address line" />
+            <label for="Address">Pick up address</label>
+            <input
+              type="address"
+              placeholder="Address line"
+              name="address"
+              required
+            />
           </div>
           <div class="label-wrap flex-column">
-            <label for="">Date and time</label>
+            <label for="Date">Date and time</label>
             <div class="input-wrapper flex-row">
-              <input class="small-input" type="date" />
-              <input class="small-input" type="time" />
+              <input class="small-input" type="date" name="date" required />
+              <input class="small-input" type="time" name="time" required />
             </div>
           </div>
           <div class="label-wrap flex-column">
-            <label for="">Charity of choice</label>
-            <select name="charities" id="charity-select">
+            <label for="charities">Charity of choice</label>
+            <select name="charities" id="charity-select" required>
               <option value="" disabled selected></option>
               <option value=""></option>
               <option value=""></option>

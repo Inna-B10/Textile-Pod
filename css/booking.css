@@ -59,19 +59,18 @@ main #steps .step-container p {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  text-shadow: 0 0 6px black;
 }
 main #steps #step1 {
-  background: #795a3e;
+  background: #543f2b;
 }
 main #steps #step2 {
-  background: #ac9d92;
+  background: #795a3e;
 }
 main #steps #step3 {
-  background: #a9a9a2;
+  background: #ac9d92;
 }
 main #steps #step4 {
-  background: #c2dfeb;
+  background: #a9a9a2;
 }
 main #form-schedule {
   gap: 0px;
@@ -137,7 +136,7 @@ main #form-schedule #form-wrap button {
   width: auto;
 }
 .booking-header-img {
-  background-image: url(/images/booking.jpg);
+  background-image: url(images/booking.jpg);
   display: flex;
   justify-content: flex-start;
   padding: 0;

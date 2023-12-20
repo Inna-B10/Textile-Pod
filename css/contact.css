@@ -44,10 +44,19 @@ textarea {
 #sponsors-sec {
   display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 10px;
+}
+#sponsors-sec h1 {
+  margin-top: 50px;
+}
+.sponsors {
+  display: flex;
+  justify-content: space-evenly;
 }
 .sponsors img {
-  width: 400px;
+  width: 300px;
 }
 body footer {
   margin-top: auto;

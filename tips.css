@@ -165,7 +165,7 @@ footer .text-wrap a {
 }
 
 .tips-header-img {
-    background-image: url(images/header-tips.jpg);
+    background-image: url(./images/header-tips.jpg);
 }
 
 .i-slogan1,
@@ -186,7 +186,7 @@ footer .text-wrap a {
     right: 60px;
 }
 
-/*------ Start tips ------------------------------------*/
+/*------ START Advices section ------------------------------------*/
 .advices {
     width: 80%;
     margin: 100px auto;
@@ -283,6 +283,7 @@ footer .text-wrap a {
     height: 75px;
 }
 
+/*-----------Quick tips------------------*/
 .advices ul {
     list-style-position: inside;
     margin: 50px auto;
@@ -391,24 +392,9 @@ footer .text-wrap a {
     }
 }
 
+/*------ END Advices section ------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------ START Tabs ------------------------------------*/
+/*------ START Tabs section ------------------------------------*/
 .tabs-section {
     overflow: hidden;
     width: 80%;
@@ -431,12 +417,11 @@ footer .text-wrap a {
 .inline-flex {
     display: inline-flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 /*----- Tab Links ------------------*/
 .tab-links {
-    margin-left: -268px;
+    margin-left: -436px;
 }
 
 .tab-links a {
@@ -487,9 +472,6 @@ footer .text-wrap a {
     list-style: none;
 }
 
-
-
-
 /*----- Content of Tabs -----*/
 .tab-content {
     width: 965px;
@@ -506,8 +488,14 @@ footer .text-wrap a {
     width: 40%;
 }
 
-.inline-flex.text-side div {
+.text-side {
     width: 50%;
+    justify-content: space-between;
 }
 
-/*-------------END TABS---------------------------------*/
+.i-icons img {
+    width: 30px;
+    justify-content: space-evenly;
+}
+
+/*------------- END TABS section ---------------------------------*/

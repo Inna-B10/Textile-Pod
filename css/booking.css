@@ -75,6 +75,7 @@ main #steps #step4 {
 }
 main #form-schedule {
   gap: 0px;
+  box-shadow: 0 0 3px #444;
 }
 main #form-schedule #form-wrap {
   display: flex;
@@ -148,9 +149,9 @@ main #form-schedule #form-wrap button {
 }
 .booking-header-img h1 {
   color: #fff;
-  font-size: 25px;
   text-align: center;
-  width: fit-content;
+  align-self: center;
+  font-size: 25px;
   text-shadow: 0 0 4px #444;
 }
 .dflex {

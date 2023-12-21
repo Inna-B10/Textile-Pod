@@ -29,13 +29,11 @@ main {
 .twotext p,
 .undershowcase p,
 .city p {
-  font-size: 24px;
   letter-spacing: 1px;
   line-height: 25px;
 }
 
 #textbar p {
-  font-size: 24px;
   width: 80%;
   margin: auto;
   padding-top: 10px;
@@ -114,7 +112,7 @@ main {
 }
 .rectext p {
   text-align: center;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 .rec img {
   width: 550px;
@@ -162,5 +160,5 @@ main {
   height: 200px;
   text-align: center;
   margin: auto;
-  padding-top: 10px;
+  padding-top: 30px;
 }

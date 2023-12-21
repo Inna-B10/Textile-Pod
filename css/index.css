@@ -10,10 +10,17 @@ main {
   background-repeat: no-repeat;
 }
 
+.backroundimg h1 {
+  padding-bottom: 10px;
+  padding-right: 200px;
+  color: rgb(250, 239, 231);
+}
+
 .clothestext h2,
 .fillstext h2,
 .rectext h2,
 .twotext h2 {
+  letter-spacing: 2px;
 }
 
 .clothestext p,
@@ -23,6 +30,8 @@ main {
 .undershowcase p,
 .city p {
   font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 25px;
 }
 
 #textbar p {
@@ -101,7 +110,6 @@ main {
   width: 550px;
   height: 331px;
   justify-content: center;
-  margin-top: 50px;
   text-align: center;
 }
 .rectext p {

@@ -11,8 +11,8 @@ body {
   padding: 0;
   gap: 100px;
   background-size: cover;
-  background-position-x: -300px;
-  background-position-y: -200px;
+  background-position-x: -400px;
+  background-position-y: -300px;
   box-shadow: 0 0 10px #444;
   background-attachment: fixed;
 }
@@ -50,11 +50,11 @@ textarea {
 }
 #sponsors-sec {
   display: flex;
-  dis
   align-content: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   gap: 10px;
+  padding: 10px;
 }
 #sponsors-sec h1 {
   margin-top: 50px;
@@ -66,10 +66,15 @@ textarea {
 .sponsors {
   display: flex;
   justify-content: space-around;
+  vertical-align: middle;
 }
 .sponsors img {
   width: 300px;
   margin: 20px;
+}
+.sponsors #jobloop {
+  width: 200px;
+  margin: 40px;
 }
 body footer {
   margin-top: auto;

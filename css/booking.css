@@ -118,6 +118,7 @@ main #form-schedule #form-wrap .small-input {
 }
 main #form-schedule #form-wrap button {
   display: flex;
+  margin-top: 30px;
   justify-content: center;
   align-items: flex-start;
   width: fit-content;

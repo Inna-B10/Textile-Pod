@@ -36,17 +36,34 @@
           <div class="label-wrap flex-column">
             <label for="">Name</label>
             <div class="input-wrapper flex-row">
-              <input class="small-input" type="text" placeholder="First name" />
-              <input class="small-input" type="text" placeholder="Last name" />
+              <input
+                class="small-input"
+                type="text"
+                placeholder="First name"
+                name="Fname"
+                required
+              />
+              <input
+                class="small-input"
+                type="text"
+                placeholder="Last name"
+                name="lname"
+                required
+              />
             </div>
           </div>
           <div class="label-wrap flex-column">
-            <label for="">Email</label>
-            <input type="text" placeholder="Email" />
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Email" name="Email" required />
           </div>
           <div class="label-wrap flex-column">
             <label for="">Phone</label>
-            <input type="text" placeholder="Phone number" />
+            <input
+              type="number"
+              placeholder="Phone number"
+              name="number"
+              required
+            />
           </div>
           <div class="label-wrap flex-column">
             <label for="Message">Message</label>
@@ -56,6 +73,7 @@
               cols="30"
               rows="10"
               placeholder="Send a message"
+              required
             ></textarea>
           </div>
           <button type="submit">SUBMIT</button>
@@ -138,7 +156,11 @@
       <section id="sponsors-sec" class="flex-column">
         <h1>OUR SPONSORS</h1>
         <div class="sponsors flex-row">
-          <img src="https://jobloop.no/images/jobloop-logo-color.png" alt="" />
+          <img
+            id="jobloop"
+            src="https://jobloop.no/images/jobloop-logo-color.png"
+            alt=""
+          />
           <img
             src="https://www.vestlandfylke.no/theme-vestland/images/logo/logo_vestland.svg"
             alt=""

@@ -14,17 +14,31 @@ main {
   border: #d49662 solid;
 }
 
-h1 {
+.backroundimg {
+  background-image: url(../images/wool.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.jeans h1 {
   font-style: italic;
   font-size: 55px;
   margin: auto;
 }
 
-h2 {
+.clothestext h2,
+.fillstext h2,
+.rectext h2,
+.twotext h2 {
   font-family: Adamina;
 }
 
-p {
+.clothestext p,
+.fillstext p,
+.rectext p,
+.twotext p,
+.undershowcase p,
+.city p {
   font-size: 24px;
   font-family: Adamina;
 }

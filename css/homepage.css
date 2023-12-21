@@ -15,7 +15,7 @@ main {
 }
 
 .backroundimg {
-  background-image: url(../images/wool.webp);
+  background-image: url(../images/wool2.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -30,7 +30,6 @@ main {
 .fillstext h2,
 .rectext h2,
 .twotext h2 {
-  font-family: Adamina;
 }
 
 .clothestext p,
@@ -40,7 +39,6 @@ main {
 .undershowcase p,
 .city p {
   font-size: 24px;
-  font-family: Adamina;
 }
 
 #textbar p {

@@ -1,174 +1,176 @@
-main{
-    padding: 0;
-    margin: 0;
-    background-color: #f4f4f4;  
-
-
+main {
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
-#showcase{
-    min-height: 300px;
-    background:url('../Images/wool.webp') no-repeat 0 -800px;
-    background-size: cover;
-    text-align: center;
-    color: white;
-    opacity: 80%;
-    border: #d49662 solid;
-    
+#showcase {
+  min-height: 300px;
+  background: url("../images/wool.webp") no-repeat 0 -800px;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  opacity: 80%;
+  border: #d49662 solid;
 }
 
-h1{
-    font-style: italic;
-    font-size: 55px;
-    margin: auto;
+.backroundimg {
+  background-image: url(../images/wool.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
-h2{
-    font-family: Adamina;
-
+.jeans h1 {
+  font-style: italic;
+  font-size: 55px;
+  margin: auto;
 }
 
-p{
-    font-size: 24px;
-    font-family: Adamina;
+.clothestext h2,
+.fillstext h2,
+.rectext h2,
+.twotext h2 {
+  font-family: Adamina;
 }
 
-#textbar p{
-font-size: 24px;
-width: 80%;
-margin: auto;
-padding-top: 10px;
+.clothestext p,
+.fillstext p,
+.rectext p,
+.twotext p,
+.undershowcase p,
+.city p {
+  font-size: 24px;
+  font-family: Adamina;
 }
 
-.clothes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 50px;
+#textbar p {
+  font-size: 24px;
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
 }
 
-.clothes img{
-    width: 550px;
-    height: 331px;
-    border-radius: 20px;
-
+.clothes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
-.clothestext{
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-    height: 331px;
-    justify-content: center;
-    text-align: center;
+.clothes img {
+  width: 550px;
+  height: 331px;
+  border-radius: 20px;
 }
 
-.clothestext p{
-    margin-top: 20px;
-
+.clothestext {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 331px;
+  justify-content: center;
+  text-align: center;
 }
 
-.fills{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
+.clothestext p {
+  margin-top: 20px;
 }
 
-.fillstext{
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-    height: 331px;
-    justify-content: center;
-    text-align: center;
+.fills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.fillstext h2{
-    text-align: center;
+.fillstext {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 331px;
+  justify-content: center;
+  text-align: center;
 }
 
-.fillstext p{
-    text-align: center;
-    margin-top: 20px;
+.fillstext h2 {
+  text-align: center;
 }
 
-.fills img{
-    width: 550px;
-    height: 331px;
-    border-radius: 20px;
-}
-.rec{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 50px;
+.fillstext p {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.rectext{
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-    height: 331px;
-    justify-content: center;
-    margin-top: 50px;
-    text-align: center;
+.fills img {
+  width: 550px;
+  height: 331px;
+  border-radius: 20px;
 }
-.rectext p{
-    text-align: center;
-    margin-top: 20px;
-}
-.rec img{
-    width: 550px;
-    height: 331px;
-    border-radius: 20px;
+.rec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
-.twogirls{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 50px;
+.rectext {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 331px;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
 }
-.twotext{
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-    height: 331px;
-    justify-content: center;
-    text-align: center;
+.rectext p {
+  text-align: center;
+  margin-top: 20px;
 }
-.twotext p{
-    text-align: center;
-    margin-top: 20px;
-}
-.twogirls img{
-    width: 550px;
-    height: 331px;
-    border-radius: 20px;
+.rec img {
+  width: 550px;
+  height: 331px;
+  border-radius: 20px;
 }
 
-.city{
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.twogirls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
 }
-.city img{
-    width: 80%;
-    margin: auto;
-    border-radius: 60px;
+.twotext {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 331px;
+  justify-content: center;
+  text-align: center;
 }
-.city p{
-    width: 80%;
-    height: 200px;
-    text-align: center;
-    margin: auto;
-    padding-top: 10px;
+.twotext p {
+  text-align: center;
+  margin-top: 20px;
+}
+.twogirls img {
+  width: 550px;
+  height: 331px;
+  border-radius: 20px;
 }
 
-
-
-
-
-
+.city {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.city img {
+  width: 80%;
+  margin: auto;
+  border-radius: 60px;
+}
+.city p {
+  width: 80%;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+}

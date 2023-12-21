@@ -4,26 +4,10 @@ main {
   background-color: #f4f4f4;
 }
 
-#showcase {
-  min-height: 300px;
-  background: url("../images/wool.webp") no-repeat 0 -800px;
-  background-size: cover;
-  text-align: center;
-  color: white;
-  opacity: 80%;
-  border: #d49662 solid;
-}
-
 .backroundimg {
   background-image: url(../images/wool2.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-}
-
-.jeans h1 {
-  font-style: italic;
-  font-size: 55px;
-  margin: auto;
 }
 
 .clothestext h2,

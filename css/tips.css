@@ -26,9 +26,8 @@ header {
 #navbar {
     z-index: 10;
     width: 100%;
-    height: 90px;
+    /* height: 90px; */
     background: #e9f4fb;
-    text-transform: uppercase;
     opacity: 0.7;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
     border-radius: 0 0 0.5em 0.5em;
@@ -296,6 +295,30 @@ footer .text-wrap a {
     position: relative;
 }
 
+/* .quick-tips-boble li::marker {
+    content: '>>';
+    font-size: 2rem;
+    background: hsl(200 20% 88%);
+    animation: color-change 3s ease-in-out infinite;
+}
+
+@keyframes color-change {
+    50% {
+        color: hotpink;
+    }
+} */
+
+.quick-tips-boble li {
+    list-style-image: url('data:image/svg+xml,<svg transform="scale(0.7) translate(0, 10)" transform-origin="center" width="50px" height="50px" viewBox="0 -10 24 38" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="scale(0.8) translate(15, 10)" transform-origin="center"><path d="M11 19L17 12L11 5" stroke="%231C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path opacity="0.5" d="M6.99976 19L12.9998 12L6.99976 5" stroke="%231C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+    /* Use translate(X, Y) to position the SVG up, down, left, and right */
+}
+
+.quick-tips-boble li::marker {
+    /* font-size: 5em; */
+    line-height: 2rem;
+}
+
+
 #animated-box2 {
     position: absolute;
     top: -40px;
@@ -509,7 +532,7 @@ footer .text-wrap a {
 
 .hr-style {
     border-width: 1px 0 0 0;
-    border-top: 1px dashed #8c8b8b;
+    border-top: 1px dashed #93c8ec;
     margin-bottom: -15px;
 }
 
@@ -518,11 +541,11 @@ footer .text-wrap a {
     display: inline-block;
     position: relative;
     top: -12px;
-    left: 0px;
-    padding: 0 5px;
-    background: #f0f0f0;
-    color: #8c8b8b;
-    font-size: 18px;
+    left: 8px;
+    /* padding: 0 5px;
+    background: #f0f0f0; */
+    color: #93c8ec;
+    font-size: 32px;
 }
 
 /*------------- END TABS section ---------------------------------*/

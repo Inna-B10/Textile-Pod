@@ -36,7 +36,7 @@ main {
 #textbar p {
   width: 80%;
   margin: auto;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .clothes {
@@ -145,18 +145,18 @@ main {
 }
 
 .city {
-  margin-top: 150px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .city img {
-  width: 80%;
+  width: 95%;
   margin: auto;
   border-radius: 60px;
 }
 .city p {
-  width: 80%;
+  width: 95%;
   height: 200px;
   text-align: center;
   margin: auto;

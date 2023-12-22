@@ -10,10 +10,24 @@ main {
   background-repeat: no-repeat;
 }
 
-.backroundimg h1 {
-  padding-bottom: 10px;
-  padding-right: 200px;
-  color: rgb(250, 239, 231);
+.s-slogan1 {
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  top: -120px;
+  font-size: 100px;
+  color: #fff;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.s-slogan2 {
+  padding-bottom: 22px;
+  margin: 0 auto;
+  color: whitesmoke;
 }
 
 .clothestext h2,

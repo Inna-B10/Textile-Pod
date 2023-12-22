@@ -171,18 +171,20 @@ footer .text-wrap a {
 .i-slogan2 {
     color: #fff;
     text-shadow: 2px 2px 0 #604545, 2px -2px 0 #604545, -2px 2px 0 #604545, -2px -2px 0 #604545, 2px 0px 0 #604545, 0px 2px 0 #604545, -2px 0px 0 #604545, 0px -2px 0 #604545;
+    /* text-shadow: 1px 1px 2px #838383, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px #8383834d; */
+
 }
 
 .i-slogan1 {
     position: relative;
     bottom: 120px;
-    right: 330px;
+    right: 295px;
 }
 
 .i-slogan2 {
     position: relative;
     bottom: 70px;
-    right: 60px;
+    right: 70px;
 }
 
 /*------ START Advices section ------------------------------------*/
@@ -284,10 +286,9 @@ footer .text-wrap a {
 
 /*-----------Quick tips------------------*/
 .advices ul {
-    list-style-position: inside;
     margin: 50px auto;
     border: 2px groove #FFFEDF;
-    padding: 30px;
+    padding: 30px 50px;
     border-radius: 0.5em;
 }
 
@@ -295,29 +296,10 @@ footer .text-wrap a {
     position: relative;
 }
 
-/* .quick-tips-boble li::marker {
-    content: '>>';
-    font-size: 2rem;
-    background: hsl(200 20% 88%);
-    animation: color-change 3s ease-in-out infinite;
-}
-
-@keyframes color-change {
-    50% {
-        color: hotpink;
-    }
-} */
-
 .quick-tips-boble li {
-    list-style-image: url('data:image/svg+xml,<svg transform="scale(0.7) translate(0, 10)" transform-origin="center" width="50px" height="50px" viewBox="0 -10 24 38" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="scale(0.8) translate(15, 10)" transform-origin="center"><path d="M11 19L17 12L11 5" stroke="%231C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path opacity="0.5" d="M6.99976 19L12.9998 12L6.99976 5" stroke="%231C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
-    /* Use translate(X, Y) to position the SVG up, down, left, and right */
+    list-style-image: url('data:image/svg+xml,<svg transform="scale(0.9) translate(0, 10)" transform-origin="center" width="30px" height="30px" viewBox="0 -5 24 38" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="scale(0.8) translate(15, 3)" transform-origin="center"><path d="M11 19L17 12L11 5" stroke="%231C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path opacity="0.5" d="M6.99976 19L12.9998 12L6.99976 5" stroke="%231C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+    /* translate(X, Y) to position the SVG up, down, left, and right */
 }
-
-.quick-tips-boble li::marker {
-    /* font-size: 5em; */
-    line-height: 2rem;
-}
-
 
 #animated-box2 {
     position: absolute;
@@ -453,8 +435,8 @@ footer .text-wrap a {
 
 .tab-links a {
     padding: 0.5rem 1.5rem;
-    color: #1e5170;
-    text-shadow: 0px 1px 0px #000;
+    color: #fff;
+    text-shadow: -1px 1px 3px #000;
     background-color: #93c8ec;
     font-size: 16px;
     font-weight: 600;
@@ -489,10 +471,10 @@ footer .text-wrap a {
     margin-bottom: -20px;
 }
 
-.tab-links li:first-child a {
+/* .tab-links li:first-child a {
     border-width: 1px 1px 0 1px;
     border-radius: 0.5em 0.5em 0 0;
-}
+} */
 
 .tab-links li {
     display: inline;
@@ -528,24 +510,30 @@ footer .text-wrap a {
 .i-icons img {
     width: 30px;
     justify-content: space-evenly;
+
 }
 
-.hr-style {
+.hr-scissors {
     border-width: 1px 0 0 0;
     border-top: 1px dashed #93c8ec;
     margin-bottom: -15px;
 }
 
-.hr-style:after {
+.hr-scissors:after {
     content: '\002702';
     display: inline-block;
     position: relative;
     top: -12px;
     left: 8px;
-    /* padding: 0 5px;
-    background: #f0f0f0; */
     color: #93c8ec;
     font-size: 32px;
+    /* text-shadow: -1px 1px 0px #604545; */
+}
+
+.hr-vertical {
+    border: none;
+    border-left: 1px dashed #93c8ec;
+    height: 35px;
 }
 
 /*------------- END TABS section ---------------------------------*/

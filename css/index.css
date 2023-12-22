@@ -45,6 +45,7 @@ main {
 .city p {
   letter-spacing: 1px;
   line-height: 25px;
+  text-align: justify;
 }
 
 #textbar p {
@@ -72,7 +73,6 @@ main {
   width: 550px;
   height: 331px;
   justify-content: center;
-  text-align: center;
 }
 
 .clothestext p {
@@ -92,7 +92,6 @@ main {
   width: 550px;
   height: 331px;
   justify-content: center;
-  text-align: center;
 }
 
 .fillstext h2 {
@@ -100,7 +99,6 @@ main {
 }
 
 .fillstext p {
-  text-align: center;
   margin-top: 20px;
 }
 
@@ -122,10 +120,8 @@ main {
   width: 550px;
   height: 331px;
   justify-content: center;
-  text-align: center;
 }
 .rectext p {
-  text-align: center;
   padding-top: 20px;
 }
 .rec img {
@@ -146,10 +142,8 @@ main {
   width: 550px;
   height: 331px;
   justify-content: center;
-  text-align: center;
 }
 .twotext p {
-  text-align: center;
   margin-top: 20px;
 }
 .twogirls img {
